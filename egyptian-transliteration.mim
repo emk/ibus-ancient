@@ -16,6 +16,7 @@
    ("s'" "ś") ;; This character is used in some conventions.
    ("S" "š")
    ("q" "ḳ")
+   ("K" "ḳ")  ;; Another popular way to type dotted k.
    ("T" "ṯ")
    ("D" "ḏ")
    ))

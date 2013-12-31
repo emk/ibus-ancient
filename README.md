@@ -42,6 +42,12 @@ transliteration characters and everything should show up as Egyptian.  For
 the egyptian-hieroglyphs input method, type a transliteration character,
 phonetic equivalent or Gardiner code, and hit space to commit.
 
+## Changing the mappings
+
+If you'd prefer a slightly different mapping, I'd love to hear about it.
+I'm happy to support any common version of MdC if it can be done without
+breaking something else.
+
 ## Other languages
 
 I have data files for quite a few runic futharks, plus Ogham, Gothic and
