@@ -1,0 +1,29 @@
+(input-method t egyptian-transliteration)
+
+(description
+ "Egyptological transliteration characters following MdC conventions.")
+
+(title "Egyptian transliteration")
+
+(map
+  (trans
+   ("A" "ꜣ")
+   ("i" "i") ;; Should be "i҆", but it breaks everywhere.
+   ("a" "ꜥ")
+   ("H" "ḥ")
+   ("x" "ḫ")
+   ("X" "ẖ")
+   ("s'" "ś") ;; This character is used in some conventions.
+   ("S" "š")
+   ("q" "ḳ")
+   ("T" "ṯ")
+   ("D" "ḏ")
+   ))
+
+(state
+  (init
+    (trans)))
+
+;; Local Variables:
+;; mode: lisp
+;; End:
