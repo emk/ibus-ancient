@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source>
+  <transliterations>
+    
+    <!-- Basic runic punctuation -->
+    <transliteration id="runepunct">
+      <map char="᛫" to=";" /> <!-- Runic single dot -->
+      <map char="᛬" to=":" /> <!-- Runic double dot -->
+      <map char="᛭" to="+" /> <!-- Runic cross -->
+    </transliteration>
+    
+    <!-- The example tables from the Unicode standard -->
+    
+    <transliteration id="elder-futhark-unicode" parent="runepunct">
+      <map char="ᚠ" to="f" />
+      <map char="ᚢ" to="u" />
+      <map char="ᚦ" to="þ" />
+      <map char="ᚨ" to="a" />
+      <map char="ᚱ" to="r" />
+      <map char="ᚲ" to="k" />
+      <map char="ᚷ" to="g" />
+      <map char="ᚹ" to="w" />
+  
+      <map char="ᚺ" to="h" />
+      <map char="ᚾ" to="n" />
+      <map char="ᛁ" to="i" />
+      <map char="ᛃ" to="j" />
+      <map char="ᛇ" to="ï" /> <!-- also "ei" -->
+      <map char="ᛈ" to="p" />
+      <map char="ᛉ" to="z" /> <!-- also "R" -->
+      <map char="ᛊ" to="s" />
+  
+      <map char="ᛏ" to="t" />
+      <map char="ᛒ" to="b" />
+      <map char="ᛖ" to="e" />
+      <map char="ᛗ" to="m" />
+      <map char="ᛚ" to="l" />
+      <map char="ᛜ" to="ŋ" />
+      <map char="ᛞ" to="d" />
+      <map char="ᛟ" to="o" />
+    </transliteration>
+    
+    <transliteration id="younger-futhark-unicode" parent="runepunct">
+      <map char="ᚠ" to="f" />
+      <map char="ᚢ" to="u" />
+      <map char="ᚦ" to="þ" />
+      <map char="ᚬ" to="ą" /> <!-- earlier vowel -->
+      <map char="ᚬ" to="o" /> <!-- later vowel (Unicode)-->
+      <map char="ᚱ" to="r" />
+      <map char="ᚴ" to="k" />
+  
+      <map char="ᚼ" to="h" />
+      <map char="ᚾ" to="n" />
+      <map char="ᛁ" to="i" />
+      <map char="ᛅ" to="a" />
+      <map char="ᛋ" to="s" />
+  
+      <map char="ᛏ" to="t" />
+      <map char="ᛒ" to="b" />
+      <map char="ᛘ" to="m" />
+      <map char="ᛚ" to="l" />
+      <map char="ᛦ" to="R" /> <!-- Later transcribed as "y" -->
+    </transliteration>
+
+    <transliteration id="younger-futhark-short-twig-unicode"
+                     parent="younger-futhark-unicode">
+      <map char="ᚭ" to="ą" /> <!-- earlier vowel -->
+      <map char="ᚭ" to="o" /> <!-- later vowel (Unicode)-->
+  
+      <map char="ᚽ" to="h" />
+      <map char="ᚿ" to="n" />
+      <map char="ᛆ" to="a" />
+      <map char="ᛌ" to="s" />
+  
+      <map char="ᛐ" to="t" />
+      <map char="ᛓ" to="b" />
+      <map char="ᛙ" to="m" />
+      <map char="ᛧ" to="R" /> <!-- Should this always be "y"? -->
+    </transliteration>
+    
+    <!-- _Danmarks runeindskrifter_ (Jacobsen & Moltke, 1941) -->
+    
+    <!-- Periode 2.2 -->
+    <transliteration id="younger-futhark-dr-2-2"
+                     parent="younger-futhark-unicode">
+      <!-- _Danmarks runeindskrifter_ indicates (as best as I can
+           understand Danish) that the short-twig form is preferred
+           for this rune, as it apparently evolved from Elder Futhark
+           "ᚨ". Since Unicode treats the two runes as variants of the
+           same rune, I'm going to go with the one which looks correct
+           without installing special fonts.  This may be reconsidered! -->
+      <map char="ᚭ" to="ą" /> <!-- earlier vowel -->
+      <map char="ᚭ" to="o" /> <!-- later vowel (Unicode)-->
+      <!-- Dotted runes -->
+      <map char="ᚤ" to="y" />
+      <map char="ᚵ" to="g" />
+      <map char="ᛂ" to="e" />
+    </transliteration>
+
+    <!-- Research -->
+    
+    <transliteration id="medieval-scandinavian-runes" parent="runepunct">
+      <!-- Based on Unicode code tables, allrunes TeX font documentation,
+           and _Danmarks runeindskrifter_.  This transliteration is the
+           trickiest of all the runic systems, because it had a very large
+           number of variants for many runes, and the transliterations
+           of several letters could be swapped.  It's probably best to
+           work from an original inscription (or scholarly documentation)
+           when typing in this system. -->
+      <map char="ᛆ" to="a" />
+      <map char="ᛒ" to="b" />
+      <!-- c, s & z often interchanged -->
+      <map char="ᛍ" to="c" /> 
+      <map char="ᛑ" to="d" />
+      <map char="ᛂ" to="e" />
+      <map char="ᚠ" to="f" />
+      <!-- According to DR, the two g runes can be reversed. -->
+      <map char="ᚵ" to="g" />
+      <map char="ᚶ" to="G" /> <!-- DR "special G-sound"-->
+      <map char="ᚼ" to="h" />
+      <map char="ᛁ" to="i" />
+      <map char="ᚴ" to="k" />
+      <map char="ᛚ" to="l" />
+      <map char="ᛛ" to="L" /> <!-- DR "special L-sound" -->
+      <map char="ᛘ" to="m" />
+      <map char="ᚿ" to="n" />
+      <map char="ᛀ" to="N" /> <!-- DR "special N-sound" -->
+      <!-- According to DR, "o" can also be written as ᚭ or the ø runes. -->
+      <map char="ᚮ" to="o" />
+      <map char="ᛔ" to="p" />
+      <map char="ᛩ" to="q" /> <!-- allrunes + Unicode -->
+      <map char="ᚱ" to="r" />
+      <!-- c, s & z often interchanged -->
+      <map char="ᛋ" to="s" />
+      <map char="ᛌ" to="S" variant="true" /> <!-- DR, elsewhere -->
+      <map char="ᛐ" to="t" />
+      <map char="ᛏ" to="T" variant="true" /> <!-- DR -->
+      <map char="ᚦ" to="þ" />
+      <map char="ᚧ" to="ð" />
+      <map char="ᚢ" to="u" />
+      <map char="ᚡ" to="v" />
+      <map char="ᚥ" to="w" /> <!-- allrunes + Unicode, ᚤ in DR -->
+      <map char="ᛪ" to="x" /> <!-- allrunes + DR -->
+      <map char="ᛦ" to="y" /> <!-- allrunes + DR  -->
+      <!-- allrunes also includes ᚣ as a variant of ᚤ, but Unicode treats
+           this solely as Anglo-Saxon Yr rune, which is historically
+           unrelated, and therefore unsuitable for graphically-based
+           substitution. -->
+      <map char="ᚤ" to="Y" variant="true" /> <!-- DR and allrunes -->
+      <!-- c, s & z often interchanged --> 
+      <map char="ᛎ" to="z" /> <!-- allrunes + Unicode -->
+      <map char="ᛅ" to="æ" /> <!-- allrunes + Unicode + DR -->
+      <!-- According to DR, "ø" can also be written as ᚬ. -->
+      <map char="ᚯ" to="ø" /> <!-- allrunes + Unicode œ + DR main variant -->
+      
+      <!-- "Golden number runes" used on calendars -->
+      <map char="ᛮ" to="17" />
+      <map char="ᛯ" to="18" />
+      <map char="ᛰ" to="19" />
+    </transliteration>
+
+    <!-- Wikipedia -->
+    
+    <!-- http://en.wikipedia.org/wiki/Anglo-Saxon_Futhorc -->
+    <transliteration id="anglosaxon" parent="runepunct">
+      <map char="ᚠ" to="f" /> <!-- feoh -->
+      <map char="ᚢ" to="u" /> <!-- ur -->
+      <map char="ᚦ" to="þ" /> <!-- þorn -->
+      <map char="ᚩ" to="o" /> <!-- os -->
+      <map char="ᚱ" to="r" /> <!-- rad -->
+      <map char="ᚳ" to="c" /> <!-- cen -->
+      <map char="ᚷ" to="ȝ" /> <!-- gyfu -->
+      <map char="ᚹ" to="w" /> <!-- wynn -->
+      
+      <map char="ᚻ" to="h" /> <!-- hægl -->
+      <map char="ᚾ" to="n" /> <!-- nyd -->
+      <map char="ᛁ" to="i" /> <!-- is -->
+      <map char="ᛄ" to="j" /> <!-- ger -->
+      <map char="ᛇ" to="eo" /> <!-- eolh -->
+      <map char="ᛈ" to="p" /> <!-- peorð -->
+      <map char="ᛉ" to="x" /> <!-- eolh -->
+      <map char="ᛋ" to="s" /> <!-- sigel -->
+      
+      <map char="ᛏ" to="t" /> <!-- tir -->
+      <map char="ᛒ" to="b" /> <!-- beorc -->
+      <map char="ᛖ" to="e" /> <!-- eh -->
+      <map char="ᛗ" to="m" /> <!-- mann -->
+      <map char="ᛚ" to="l" /> <!-- lagu -->
+      <map char="ᛝ" to="ŋ" /> <!-- ing -->
+      <map char="ᛟ" to="œ" /> <!-- eðel -->
+      <map char="ᛞ" to="d" /> <!-- dæg -->
+      
+      <map char="ᚪ" to="a" /> <!-- ac -->
+      <map char="ᚫ" to="æ" /> <!-- æsc -->
+      <map char="ᚣ" to="y" /> <!-- yr -->
+      <map char="ᛡ" to="ia" /> <!-- ior (both io and ia) -->
+      <map char="ᛠ" to="ea" /> <!-- ear -->
+      
+      <!-- TODO: Shorter forms for ia, ea and eo? -->
+      
+      <!-- Rarer: Only present in some inscriptions/manuscripts. -->
+      <map char="ᛢ" to="kw" /> <!-- cweorð -->
+      <map char="ᛣ" to="k" /> <!-- calc -->
+      <map char="ᛤ" to="kk" /> <!-- cealc (doubled calc) -->
+      <map char="ᛥ" to="st" /> <!-- stan -->
+      <map char="ᚸ" to="g" /> <!-- gar -->
+    </transliteration>
+    
+    <!-- http://en.wikipedia.org/wiki/Younger_Futhark#Dalrunes currently
+         describes an ordinary medieval Scandinavian system, and not
+         the authentic mixed runic/latin system which should belong
+         to this name. -->
+    
+    <!-- I'm not sure who uses these: ᚥᚰᚶᛀᛕᛛᛨᛩᛪ -->
+    
+    <!-- Not runes, but a fun relative.
+         From http://en.wikipedia.org/wiki/Ogham -->
+    <transliteration id="ogham">
+      <map char=" " to=" " /> <!--   U+1680   OGHAM SPACE MARK -->
+      <map char="ᚁ" to="b" /> <!-- b U+1681 ᚁ OGHAM LETTER BEITH -->
+      <map char="ᚂ" to="l" /> <!-- l U+1682 ᚂ OGHAM LETTER LUIS -->
+      <map char="ᚃ" to="f" /> <!-- f U+1683 ᚃ OGHAM LETTER FEARN -->
+      <map char="ᚄ" to="s" /> <!-- s U+1684 ᚄ OGHAM LETTER SAIL -->
+      <map char="ᚅ" to="n" /> <!-- n U+1685 ᚅ OGHAM LETTER NION -->
+      <map char="ᚆ" to="h" /> <!-- h U+1686 ᚆ OGHAM LETTER UATH -->
+      <map char="ᚇ" to="d" /> <!-- d U+1687 ᚇ OGHAM LETTER DAIR -->
+      <map char="ᚈ" to="t" /> <!-- t U+1688 ᚈ OGHAM LETTER TINNE -->
+      <map char="ᚉ" to="c" /> <!-- c U+1689 ᚉ OGHAM LETTER COLL -->
+      <map char="ᚊ" to="q" /> <!-- q U+168A ᚊ OGHAM LETTER CEIRT -->
+      <map char="ᚋ" to="m" /> <!-- m U+168B ᚋ OGHAM LETTER MUIN -->
+      <map char="ᚌ" to="g" /> <!-- g U+168C ᚌ OGHAM LETTER GORT -->
+      <map char="ᚍ" to="ŋ" /> <!-- ng U+168D ᚍ OGHAM LETTER NGEADAL -->
+      <map char="ᚎ" to="z" /> <!-- z U+168E ᚎ OGHAM LETTER STRAIF -->
+      <map char="ᚏ" to="r" /> <!-- r U+168F ᚏ OGHAM LETTER RUIS -->
+      <map char="ᚐ" to="a" /> <!-- a U+1690 ᚐ OGHAM LETTER AILM -->
+      <map char="ᚑ" to="o" /> <!-- o U+1691 ᚑ OGHAM LETTER ONN -->
+      <map char="ᚒ" to="u" /> <!-- u U+1692 ᚒ OGHAM LETTER UR -->
+      <map char="ᚓ" to="e" /> <!-- e U+1693 ᚓ OGHAM LETTER EADHADH -->
+      <map char="ᚔ" to="i" /> <!-- i U+1694 ᚔ OGHAM LETTER IODHADH -->
+      
+      <!-- Used to mark start and end of Ogham text. -->
+      <map char="᚛" to=">" /> <!-- > U+169B ᚛ OGHAM FEATHER MARK -->
+      <map char="᚜" to="<" /> <!-- < U+169C ᚜ OGHAM REVERSED FEATHER -->
+      
+      <!-- Rare forms. See http://en.wikipedia.org/wiki/Forfeda -->
+      <!-- ea, éo ea -->
+      <map char="ᚕ" to="ea" /> <!-- ea U+1695 ᚕ OGHAM LETTER EABHADH -->
+      <!-- oi, óe, oi -->
+      <map char="ᚖ" to="oi" /> <!-- oi U+1696 ᚖ OGHAM LETTER OR -->
+      <!-- ui, úa, ui -->
+      <map char="ᚗ" to="ui" /> <!-- ui U+1697 ᚗ OGHAM LETTER UILLEANN -->
+      <!-- io, ía, ia -->
+      <map char="ᚘ" to="io" /> <!-- io U+1698 ᚘ OGHAM LETTER IFIN -->
+      <!-- ae -->
+      <map char="ᚙ" to="ae" /> <!-- ae U+1699 ᚙ OGHAM LETTER EAMHANCHOLL-->
+      <map char="ᚚ" to="p" /> <!-- p U+169A ᚚ OGHAM LETTER PEITH -->
+    </transliteration>
+    
+    <transliteration id="gothic">
+      <!-- http://en.wikipedia.org/wiki/Gothic_alphabet -->
+      <map char="&#x10330;" to="a" /> <!--	Α 1 -->
+      <map char="&#x10331;" to="b" /> <!-- Β 2 -->
+      <map char="&#x10332;" to="g" /> <!-- Γ 3 -->
+      <map char="&#x10333;" to="d" /> <!-- Δ 4 -->
+      <map char="&#x10334;" to="e" /> <!-- Ε 5 -->
+      <map char="&#x10335;" to="q" /> <!-- Π 6 -->
+      <map char="&#x10336;" to="z" /> <!-- Ζ 7 -->
+      <map char="&#x10337;" to="h" /> <!-- H 8 -->
+      <map char="&#x10338;" to="þ" /> <!-- Θ 9 -->
+      <map char="&#x10339;" to="i" /> <!-- Ι 10 -->
+      <map char="&#x1033A;" to="k" /> <!-- Κ 20 -->
+      <map char="&#x1033B;" to="l" /> <!-- Λ 30 -->
+      <map char="&#x1033C;" to="m" /> <!-- Μ 40 -->
+      <map char="&#x1033D;" to="n" /> <!-- Ν 50 -->
+      <map char="&#x1033E;" to="j" /> <!-- ᛃ 60 -->
+      <map char="&#x1033F;" to="u" /> <!-- ᚢ 70 -->
+      <map char="&#x10340;" to="p" /> <!-- Π 80 -->
+      <map char="&#x10341;" to="90" /> <!-- Ϟ 90 -->
+      <map char="&#x10342;" to="r" /> <!-- R 100 -->
+      <map char="&#x10343;" to="s" /> <!-- S 200 -->
+      <map char="&#x10344;" to="t" /> <!-- Τ 300 -->
+      <map char="&#x10345;" to="w" /> <!-- Υ 400 -->
+      <map char="&#x10346;" to="f" /> <!-- F 500 -->
+      <map char="&#x10347;" to="x" /> <!-- X 600 -->
+      <map char="&#x10348;" to="ƕ" /> <!-- 	700 -->
+      <map char="&#x10349;" to="o" /> <!-- Ω 800 -->
+      <map char="&#x1034A;" to="900" /> <!-- Ϡ 900 -->
+      <map char=":" to=":" /> <!-- Colon -->
+      <map char="·" to=";" /> <!-- Middle dot -->
+      <!-- We need a macron-above-below pair for the numbers.
+           See &#x0304; and &#x0331; -->
+      
+      <!-- This is visible in the manuscript and in transliterations.  See:
+        http://www.ub.uu.se/arv/codex/faksimiledition/jpg_files/001mt5f.html
+        http://www.georgetown.edu/faculty/ballc/oe/paternoster-gothic.html
+        http://www.christusrex.org/www1/pater/JPN-gothic.html -->
+      <map char="&#x10339;&#x0308; " to="ï" />
+    </transliteration>
+    
+    <transliteration id="old-italic-combined">
+      <!-- This keyboard mixes together all the old Italic alphabets
+           on a single keyboard using the transcription on Wikipedia.
+           Unlike the other systems, we don't (yet) attempt to separate
+           out each language's sub-alphabet to a separate keyboard.
+           If you have better documentation on trascription standards
+           for any particular language, please feel free to submit
+           corrections. 
+           http://en.wikipedia.org/wiki/Old_Italic_alphabets
+           A good starting place for separate keyboards:
+           http://www.omniglot.com/writing/olditalic.htm -->
+      <map char="&#x10300;" to="a" /> <!-- OLD ITALIC LETTER A -->
+      <map char="&#x10301;" to="b" /> <!-- OLD ITALIC LETTER BE -->
+      <map char="&#x10302;" to="c" /> <!-- OLD ITALIC LETTER KE -->
+      <map char="&#x10303;" to="d" /> <!-- OLD ITALIC LETTER DE -->
+      <map char="&#x10304;" to="e" /> <!-- OLD ITALIC LETTER E -->
+      <map char="&#x10305;" to="v" /> <!-- OLD ITALIC LETTER VE -->
+      <map char="&#x10306;" to="z" /> <!-- OLD ITALIC LETTER ZE -->
+      <map char="&#x10307;" to="h" /> <!-- OLD ITALIC LETTER HE -->
+      <map char="&#x10308;" to="b" /> <!-- OLD ITALIC LETTER THE -->
+      <map char="&#x10309;" to="i" /> <!-- OLD ITALIC LETTER I -->
+      <map char="&#x1030A;" to="k" /> <!-- OLD ITALIC LETTER KA -->
+      <map char="&#x1030B;" to="l" /> <!-- OLD ITALIC LETTER EL -->
+      <map char="&#x1030C;" to="m" /> <!-- OLD ITALIC LETTER EM -->
+      <map char="&#x1030D;" to="n" /> <!-- OLD ITALIC LETTER EN -->
+      <map char="&#x1030E;" to="š" /> <!-- OLD ITALIC LETTER ESH -->
+      <map char="&#x1030F;" to="o" /> <!-- OLD ITALIC LETTER O -->
+      <map char="&#x10310;" to="p" /> <!-- OLD ITALIC LETTER PE -->
+      <map char="&#x10311;" to="ś" /> <!-- OLD ITALIC LETTER SHE -->
+      <map char="&#x10312;" to="q" /> <!-- OLD ITALIC LETTER KU -->
+      <map char="&#x10313;" to="r" /> <!-- OLD ITALIC LETTER ER -->
+      <map char="&#x10314;" to="s" /> <!-- OLD ITALIC LETTER ES -->
+      <map char="&#x10315;" to="t" /> <!-- OLD ITALIC LETTER TE -->
+      <map char="&#x10316;" to="u" /> <!-- OLD ITALIC LETTER U -->
+      <map char="&#x10317;" to="x" /> <!-- OLD ITALIC LETTER EKS -->
+      <map char="&#x10318;" to="ph" /> <!-- OLD ITALIC LETTER PHE -->
+      <map char="&#x10319;" to="ch" /> <!-- OLD ITALIC LETTER KHE -->
+      <map char="&#x1031A;" to="f" /> <!-- OLD ITALIC LETTER EF -->
+      <map char="&#x1031B;" to="ř" /> <!-- OLD ITALIC LETTER ERS -->
+      <map char="&#x1031C;" to="ç" /> <!-- OLD ITALIC LETTER CHE -->
+      <map char="&#x1031D;" to="í" /> <!-- OLD ITALIC LETTER II -->
+      <map char="&#x1031E;" to="ú" /> <!-- OLD ITALIC LETTER UU -->
+      <map char="&#x10320;" to="I" /> <!-- OLD ITALIC NUMERAL ONE -->
+      <map char="&#x10321;" to="V" /> <!-- OLD ITALIC NUMERAL FIVE -->
+      <map char="&#x10322;" to="X" /> <!-- OLD ITALIC NUMERAL TEN -->
+      <map char="&#x10323;" to="D" /> <!-- OLD ITALIC NUMERAL FIFTY -->
+    </transliteration>
+  </transliterations>
+    
+  <!-- Special keys: þ ð ï ŋ ȝ œ æ ø ą -->
+  
+  <keyboards>
+    <keyboard id="-200" name="Elder Futhark"
+              transliteration="elder-futhark-unicode">
+      <bind modifiers="opt" key="i" to="ï" />
+      <bind modifiers="opt" key="n" to="ŋ" />
+    </keyboard>
+    <keyboard id="-201" name="Younger Futhark"
+              transliteration="younger-futhark-unicode">
+      <bind modifiers="opt" key="a" to="ą" />
+    </keyboard>
+    <keyboard id="-202" name="Younger Futhark - Denmark"
+              transliteration="younger-futhark-dr-2-2">
+      <bind modifiers="opt" key="a" to="ą" />
+    </keyboard>
+    <keyboard id="-203" name="Anglo-Saxon Futhorc"
+              transliteration="anglosaxon">
+      <bind modifiers="opt" key="g" to="ȝ" />
+      <bind modifiers="opt" key="n" to="ŋ" />
+    </keyboard>
+    <!-- Replaces bogus "Dalrunes" keyboard, which was more-or-less a
+         medieval Scandinavian keyboard. -->
+    <keyboard id="-204" name="Medieval Scandinavian Runes"
+              transliteration="medieval-scandinavian-runes" />
+    <keyboard id="-205" name="Ogham" transliteration="ogham">
+      <bind modifiers="opt" key="n" to="ŋ" />
+    </keyboard>
+    <keyboard id="-206" name="Gothic" transliteration="gothic">
+      <bind modifiers="opt" key="h" to="ƕ" />
+      <bind modifiers="opt" key="i" to="ï" />
+      <bind modifiers="opt" key="9" to="90" />
+      <bind modifiers="opt" key="(" to="900" />
+    </keyboard>
+    <keyboard id="-207" name="Old Italic - Combined"
+              transliteration="old-italic-combined">
+      <bind modifiers="opt" key="s" to="š" />
+      <bind modifiers="opt" key="S" to="ś" />
+      <bind modifiers="opt" key="r" to="ř" />
+      <bind modifiers="opt" key="i" to="í" />
+      <bind modifiers="opt" key="u" to="ú" />
+    </keyboard>
+    <keyboard id="-208" name="Younger Futhark - Short-Twig"
+              transliteration="younger-futhark-short-twig-unicode">
+      <bind modifiers="opt" key="a" to="ą" />
+    </keyboard>
+  </keyboards>
+</source>

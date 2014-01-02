@@ -1,9 +1,9 @@
-# ibus-ancient
+## ibus-ancient
 
 ibus-compatible input methods and keyboards for ancient languages.
 Prerelease.  Batteries not included.  Some assembly required.
 
-## ibus setup
+### ibus setup
 
 First, you need to ibus installed, configured and working.  Please consult
 your favorite search engine and your distribution for details.
@@ -24,7 +24,7 @@ process, because I run an older version of Ubuntu and I got this stuff to
 work by hitting it repeatedly with a rock (metaphorically speaking).  Good
 luck.
 
-## ibus-ancient setup
+### ibus-ancient setup
 
 Once that's done:
 
@@ -42,19 +42,28 @@ transliteration characters and everything should show up as Egyptian.  For
 the egyptian-hieroglyphs input method, type a transliteration character,
 phonetic equivalent or Gardiner code, and hit space to commit.
 
-## Changing the mappings
+### Changing the mappings
 
 If you'd prefer a slightly different mapping, I'd love to hear about it.
 I'm happy to support any common version of MdC if it can be done without
 breaking something else.
 
-## Other languages
+### Other languages
 
 I have data files for quite a few runic futharks, plus Ogham, Gothic and
 the Old Italic alphabets.  I'd be happy to convert these to m17n keyboards
-if there's interest.
+if there's interest.  See the file `more-for-later.xml`.  The runic
+mappings are the most detailed by far, with support for quite a few
+different runic systems used in different counties at different times.
 
-## License
+### Other platforms
+
+I have some code to build MacOS keyboard bundles from the material in
+`more-for-later.xml` that could be adapted to the various layouts in this
+package.  But I don't know whether keyboard bundles even work on newer
+versions of the MacOS.
+
+### License
 
 The file `Unicode-MdC-Mapping-v1.utf8` is covered by the Unicode license,
 as are the portions of `egyptian-hieroglyphs-table.txt` derived from that
