@@ -1,0 +1,93 @@
+(input-method t coptic)
+
+(description
+ "Coptic characters following modified transliteration conventions")
+
+(title "Coptic")
+
+;; This map is based on a transliteration table in Loprieno's excellent
+;; book on Ancient Egyptian.  As such, it covers mostly just enough Coptic
+;; to be used with that book.  I would love to upgrade this to the point
+;; that's its useful for people whose primary interest is Coptic, but baby
+;; steps!  All suggestions will be accepted with gratitude and considered
+;; carefully.
+;;
+;; Some good ideas for further refinements can be found here:
+;; http://www.wazu.jp/gallery/Test_Coptic.html
+;;
+;; Also, I have no idea about what's going on with capitals / lowercase
+;; in Coptic.
+
+(map
+  (trans
+   ;; Borrowed from Greek.
+   ("a" "ⲁ")
+   ("A" "Ⲁ")
+   ("b" "ⲃ")
+   ("B" "Ⲃ")
+   ("g" "ⲅ")
+   ("G" "Ⲅ")
+   ("d" "ⲇ")
+   ("D" "Ⲇ")
+   ("e" "ⲉ")
+   ("E" "Ⲉ")
+   ("z" "ⲍ")
+   ("Z" "Ⲍ")
+   ("e^" "ⲏ") ;; ê
+   ("E^" "Ⲏ") ;; Ê
+   ("th" "ⲑ")
+   ("TH" "Ⲑ")
+   ("i" "ⲓ")
+   ("I" "Ⲓ")
+   ("k" "ⲕ")
+   ("K" "Ⲕ")
+   ("l" "ⲗ")
+   ("L" "Ⲗ")
+   ("m" "ⲙ")
+   ("M" "Ⲙ")
+   ("n" "ⲛ")
+   ("N" "Ⲛ")
+   ("o" "ⲟ")
+   ("Ⲟ" "Ⲟ")
+   ("p" "ⲡ")
+   ("P" "Ⲡ")
+   ("r" "ⲣ")
+   ("R" "Ⲣ")
+   ("s" "ⲥ")
+   ("S" "Ⲥ")
+   ("t" "ⲧ")
+   ("T" "Ⲧ")
+   ("u" "ⲩ")
+   ("U" "Ⲩ")
+   ("ph" "ⲫ")
+   ("PH" "Ⲫ")
+   ("kh" "ⲭ")
+   ("KH" "Ⲭ")
+   ("ps" "ⲯ")
+   ("PS" "Ⲯ")
+   ("o^" "ⲱ") ;; ô
+   ("O^" "Ⲱ") ;; Ô
+   ;; Adapted to Coptic.
+   ("s^" "ϣ") ;; š
+   ("S^" "Ϣ") ;; Š
+   ("f" "ϥ")
+   ("F" "Ϥ")
+   ("x" "ϧ")
+   ("X" "Ϧ")
+   ("h" "ϩ")
+   ("H" "Ϩ")
+   ("j" "ϫ")
+   ("J" "Ϫ")
+   ("c" "ϭ")
+   ("C" "Ϭ")
+   ("ti" "ϯ")
+   ("TI" "Ϯ")
+   ))
+
+(state
+  (init
+    (trans)))
+
+;; Local Variables:
+;; mode: lisp
+;; End:
