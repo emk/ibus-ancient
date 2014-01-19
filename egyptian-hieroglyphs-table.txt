@@ -48,7 +48,7 @@ AUTHOR = Eric Kidd <git@randomhacks.net>
 
 ### Prompt string to be displayed in the status area, CN will be replaced by
 ### the gettext tools in runtime as 中.
-STATUS_PROMPT = ﻿𓀀
+STATUS_PROMPT = 𓀀
 
 ### Valid input chars.
 VALID_INPUT_CHARS = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890\*:-
@@ -107,7 +107,7 @@ END_DEFINITION
 ### the key combination you want; the 3rd column are frequency of the character
 ### or phrase.
 BEGIN_TABLE
-A1	﻿𓀀	1000
+A1	𓀀	1000
 A2	𓀁	1000
 A3	𓀂	1000
 A4	𓀃	1000
