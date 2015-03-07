@@ -55,11 +55,11 @@
       ("w" "ᚥ") ;;  allrunes + Unicode, ᚤ in DR 
       ("x" "ᛪ") ;;  allrunes + DR 
       ("y" "ᛦ") ;;  allrunes + DR  
-      <!-- allrunes also includes ᚣ as a variant of ᚤ, but Unicode treats
-           this solely as Anglo-Saxon Yr rune, which is historically
-           unrelated, and therefore unsuitable for graphically-based
-           substitution. -->
-      ("Y" variant="true" "ᚤ") ;;  DR and allrunes 
+;;      <!-- allrunes also includes ᚣ as a variant of ᚤ, but Unicode treats
+;;           this solely as Anglo-Saxon Yr rune, which is historically
+;;           unrelated, and therefore unsuitable for graphically-based
+;;           substitution. -->
+      ("Y" "ᚤ") ;;  DR and allrunes 
       ;;  c, s & z often interchanged  
       ("z" "ᛎ") ;;  allrunes + Unicode 
       ("æ" "ᛅ") ;;  allrunes + Unicode + DR 
