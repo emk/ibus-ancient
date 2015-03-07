@@ -1,0 +1,63 @@
+
+(input-method t danish-futhark)
+
+(description
+ "Input method for runic writing.")
+
+(map
+  (trans
+
+    ;; <transliteration id="runepunct">
+      (";" "᛫") ;;  Runic single dot 
+      (":" "᛬") ;;  Runic double dot 
+      ("+" "᛭") ;;  Runic cross 
+    ;; </transliteration>
+
+    ;; <transliteration id="younger-futhark-unicode" parent="runepunct">
+      ("f" "ᚠ")
+      ("u" "ᚢ")
+      ("þ" "ᚦ")
+      ("&th" "ᚦ") ;; adapted from rfc1345.mim   ("&th" ?\þ)
+      ;;("ą" "ᚬ") ;;  earlier vowel 
+      ;;("o" "ᚬ") ;;  later vowel (Unicode)
+      ("r" "ᚱ")
+      ("k" "ᚴ")
+  
+      ("h" "ᚼ")
+      ("n" "ᚾ")
+      ("i" "ᛁ")
+      ("a" "ᛅ")
+      ("s" "ᛋ")
+  
+      ("t" "ᛏ")
+      ("b" "ᛒ")
+      ("m" "ᛘ")
+      ("l" "ᛚ")
+      ("R" "ᛦ") ;;  Later transcribed as "y" 
+    ;; </transliteration>
+    ;;
+    ;;  _Danmarks runeindskrifter_ (Jacobsen & Moltke, 1941) 
+    
+    ;;  Periode 2.2 
+    ;; <transliteration id="younger-futhark-dr-2-2"
+    ;;               parent="younger-futhark-unicode">
+    ;;  <!-- _Danmarks runeindskrifter_ indicates (as best as I can
+    ;;       understand Danish) that the short-twig form is preferred
+    ;;       for this rune, as it apparently evolved from Elder Futhark
+    ;;       "ᚨ". Since Unicode treats the two runes as variants of the
+    ;;       same rune, I'm going to go with the one which looks correct
+    ;;       without installing special fonts.  This may be reconsidered! -->
+      ("ą" "ᚭ") ;;  earlier vowel 
+      ("&a;" "ᚭ") ;; adapted from rfc1345.mim   ("&a;" ?\ą)
+      ("o" "ᚭ") ;;  later vowel (Unicode)
+      ;;  Dotted runes 
+      ("y" "ᚤ")
+      ("g" "ᚵ")
+      ("e" "ᛂ")
+    ;; </transliteration>
+  )
+)
+
+(state
+  (init
+    (trans)))

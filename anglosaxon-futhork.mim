@@ -1,0 +1,71 @@
+(input-method t anglosaxon-futhork)
+
+(description
+ "medieval Anglo-Saxon runes")
+
+(map
+  (trans
+
+    ;; <transliteration id="runepunct">
+      (";" "᛫") ;;  Runic single dot 
+      (":" "᛬") ;;  Runic double dot 
+      ("+" "᛭") ;;  Runic cross 
+    ;; </transliteration>
+    ;;
+    ;;  Wikipedia 
+    
+    ;;  http://en.wikipedia.org/wiki/Anglo-Saxon_Futhorc 
+    ;; <transliteration id="anglosaxon" parent="runepunct">
+      ("f" "ᚠ") ;;  feoh 
+      ("u" "ᚢ") ;;  ur 
+      ("þ" "ᚦ") ;;  þorn 
+      ("&th" "ᚦ") ;;  þorn 
+      ("o" "ᚩ") ;;  os 
+      ("r" "ᚱ") ;;  rad 
+      ("c" "ᚳ") ;;  cen 
+      ("ȝ" "ᚷ") ;;  gyfu 
+      ("&gy" "ᚷ") ;;  gyfu  ;; (This one actually is not in rfc1345)
+      ("w" "ᚹ") ;;  wynn 
+      
+      ("h" "ᚻ") ;;  hægl 
+      ("n" "ᚾ") ;;  nyd 
+      ("i" "ᛁ") ;;  is 
+      ("j" "ᛄ") ;;  ger 
+      ("eo" "ᛇ") ;;  eolh 
+      ("p" "ᛈ") ;;  peorð 
+      ("x" "ᛉ") ;;  eolh 
+      ("s" "ᛋ") ;;  sigel 
+      
+      ("t" "ᛏ") ;;  tir 
+      ("b" "ᛒ") ;;  beorc 
+      ("e" "ᛖ") ;;  eh 
+      ("m" "ᛗ") ;;  mann 
+      ("l" "ᛚ") ;;  lagu 
+      ("ŋ" "ᛝ") ;;  ing 
+      ("&ng" "ᛝ") ;;  ing 
+      ("œ" "ᛟ") ;;  eðel 
+      ("&oe" "ᛟ") ;;  eðel 
+      ("d" "ᛞ") ;;  dæg 
+      
+      ("a" "ᚪ") ;;  ac 
+      ("æ" "ᚫ") ;;  æsc 
+      ("&ae" "ᚫ") ;;  æsc 
+      ("y" "ᚣ") ;;  yr 
+      ("ia" "ᛡ") ;;  ior (both io and ia) 
+      ("ea" "ᛠ") ;;  ear 
+      
+      ;;  TODO: Shorter forms for ia, ea and eo? 
+      
+      ;;  Rarer: Only present in some inscriptions/manuscripts. 
+      ("kw" "ᛢ") ;;  cweorð 
+      ("k" "ᛣ") ;;  calc 
+      ("kk" "ᛤ") ;;  cealc (doubled calc) 
+      ("st" "ᛥ") ;;  stan 
+      ("g" "ᚸ") ;;  gar 
+    ;; </transliteration>
+  )
+)
+
+(state
+  (init
+    (trans)))

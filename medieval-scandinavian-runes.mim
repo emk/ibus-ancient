@@ -1,0 +1,81 @@
+(input-method t medieval-scandinavian-runes)
+
+(description
+ "medieval scandinavian runes")
+
+(map
+  (trans
+    ;; <transliteration id="runepunct">
+      (";" "᛫") ;;  Runic single dot 
+      (":" "᛬") ;;  Runic double dot 
+      ("+" "᛭") ;;  Runic cross 
+    ;; </transliteration>
+
+    ;; <transliteration id="medieval-scandinavian-runes" parent="runepunct">
+;;      <!-- Based on Unicode code tables, allrunes TeX font documentation,
+;;           and _Danmarks runeindskrifter_.  This transliteration is the
+;;           trickiest of all the runic systems, because it had a very large
+;;           number of variants for many runes, and the transliterations
+;;           of several letters could be swapped.  It's probably best to
+;;           work from an original inscription (or scholarly documentation)
+;;           when typing in this system. -->
+      ("a" "ᛆ")
+      ("b" "ᛒ")
+      ;;  c, s & z often interchanged 
+      ("c" "ᛍ") 
+      ("d" "ᛑ")
+      ("e" "ᛂ")
+      ("f" "ᚠ")
+      ;;  According to DR, the two g runes can be reversed. 
+      ("g" "ᚵ")
+      ("G" "ᚶ") ;;  DR "special G-sound"
+      ("h" "ᚼ")
+      ("i" "ᛁ")
+      ("k" "ᚴ")
+      ("l" "ᛚ")
+      ("L" "ᛛ") ;;  DR "special L-sound" 
+      ("m" "ᛘ")
+      ("n" "ᚿ")
+      ("N" "ᛀ") ;;  DR "special N-sound" 
+      ;;  According to DR, "o" can also be written as ᚭ or the ø runes. 
+      ("o" "ᚮ")
+      ("p" "ᛔ")
+      ("q" "ᛩ") ;;  allrunes + Unicode 
+      ("r" "ᚱ")
+      ;;  c, s & z often interchanged 
+      ("s" "ᛋ")
+      ("S" "ᛌ") ;;  DR, elsewhere 
+      ("t" "ᛐ")
+      ("T" "ᛏ") ;;  DR 
+      ("þ" "ᚦ")
+      ("ð" "ᚧ")
+      ("&d-" "ᚧ") ;; adapted from rfc1345.mim("&d-" ?\ð)
+      ("u" "ᚢ")
+      ("v" "ᚡ")
+      ("w" "ᚥ") ;;  allrunes + Unicode, ᚤ in DR 
+      ("x" "ᛪ") ;;  allrunes + DR 
+      ("y" "ᛦ") ;;  allrunes + DR  
+      <!-- allrunes also includes ᚣ as a variant of ᚤ, but Unicode treats
+           this solely as Anglo-Saxon Yr rune, which is historically
+           unrelated, and therefore unsuitable for graphically-based
+           substitution. -->
+      ("Y" variant="true" "ᚤ") ;;  DR and allrunes 
+      ;;  c, s & z often interchanged  
+      ("z" "ᛎ") ;;  allrunes + Unicode 
+      ("æ" "ᛅ") ;;  allrunes + Unicode + DR 
+      ("&ae" "ᛅ") ;; adapted from rfc1345 ("&ae" ?\æ)
+      ;;  According to DR, "ø" can also be written as ᚬ. 
+      ("ø" "ᚯ") ;;  allrunes + Unicode œ + DR main variant 
+      ("&o/" "ᚯ") ;; adapted from rfc1345.mim ("&o/" ?\ø)
+
+      ;;  "Golden number runes" used on calendars 
+      ("17" "ᛮ")
+      ("18" "ᛯ")
+      ("19" "ᛰ")
+    ;; </transliteration>
+  )
+)
+
+(state
+  (init
+    (trans)))
