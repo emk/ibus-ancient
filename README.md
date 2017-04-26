@@ -24,6 +24,16 @@ process, because I run an older version of Ubuntu and I got this stuff to
 work by hitting it repeatedly with a rock (metaphorically speaking).  Good
 luck.
 
+**Update:** On Ubuntu 16.04, my input methods menu on the upper right was
+totally broken, and I had to
+install [`indicator-systemtray-unity`][indicator-systemtray-unity] and use
+the keyboard switch it provided, and I had to use `ibus-setup` to configure
+my list of available input methods.  I have no idea what's going on
+here—even basic input method functionality on 16.04 is broken for me, even
+before installing `ibus-ancient`.
+
+[indicator-systemtray-unity]: https://github.com/GGleb/indicator-systemtray-unity
+
 ### ibus-ancient setup
 
 Once that's done:
