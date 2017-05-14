@@ -1,0 +1,64 @@
+(input-method t elder-futhark)
+
+(description
+ "Input method for runic writing.")
+
+(map
+  (trans
+    ;; Basic runic punctuation
+    ;; <transliteration id="runepunct">
+      (";" "᛫") ;;  Runic single dot 
+      (":" "᛬") ;;  Runic double dot 
+      ("+" "᛭") ;;  Runic cross 
+    ;; </transliteration>
+    
+    ;;  The example tables from the Unicode standard 
+    
+    ;; <transliteration id="elder-futhark-unicode" parent="runepunct">
+      ("f" "ᚠ")
+      ("u" "ᚢ")
+      ("þ" "ᚦ")
+      ("&th" "ᚦ") ;; adapted from rfc1345.mim   ("&th" ?\þ)
+      ("a" "ᚨ")
+      ("r" "ᚱ")
+      ("k" "ᚲ")
+      ("g" "ᚷ")
+      ("w" "ᚹ")
+  
+      ("h" "ᚺ")
+      ("n" "ᚾ")
+      ("i" "ᛁ")
+      ("j" "ᛃ")
+      ("ï" "ᛇ") ;;  also "ei" 
+      ("&i:" "ᛇ") ;; adapted from rfc1345.mim   ("&i:" ?\ï)
+      ("p" "ᛈ")
+      ("z" "ᛉ") ;;  also "R" 
+      ("s" "ᛊ")
+  
+      ("t" "ᛏ")
+      ("b" "ᛒ")
+      ("e" "ᛖ")
+      ("m" "ᛗ")
+      ("l" "ᛚ")
+      ("ŋ" "ᛜ")
+      ("&ng" "ᛜ") ;; adapted from rfc1345.mim   ("&ng" ?\ŋ)
+      ("d" "ᛞ")
+      ("o" "ᛟ")
+    ;; </transliteration>
+
+;;  Special keys: þ ð ï ŋ ȝ œ æ ø ą 
+;; adapted from rfc1345.mim   ("&th" ?\þ)
+;; adapted from rfc1345.mim   ("&d-" ?\ð)
+;; adapted from rfc1345.mim   ("&i:" ?\ï)
+;; adapted from rfc1345.mim   ("&ng" ?\ŋ)
+;; ("g" "ȝ") 
+;; adapted from rfc1345.mim   ("&oe" ?\œ)
+;; adapted from rfc1345.mim   ("&ae" ?\æ)
+;; adapted from rfc1345.mim   ("&o/" ?\ø)
+;; adapted from rfc1345.mim   ("&a;" ?\ą)
+  )
+)
+
+(state
+  (init
+    (trans)))

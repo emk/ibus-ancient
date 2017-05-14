@@ -1,0 +1,75 @@
+(input-method t younger-futhark)
+
+(description
+ "younger-futhark runes ; capital case for short twig")
+
+(map
+  (trans
+    ;; Basic runic punctuation
+    ;; <transliteration id="runepunct">
+      (";" "᛫") ;;  Runic single dot 
+      (":" "᛬") ;;  Runic double dot 
+      ("+" "᛭") ;;  Runic cross 
+    ;; </transliteration>
+    
+    ;;  The example tables from the Unicode standard 
+    
+    ;; <transliteration id="younger-futhark-unicode" parent="runepunct">
+      ("f" "ᚠ")
+      ("u" "ᚢ")
+      ;;("þ" "ᚦ") 
+      ("&th" "ᚦ") ;; adapted from rfc1345.mim   ("&th" ?\þ)
+      ;;("ą" "ᚬ") ;;  earlier vowel 
+      ("&a;" "ᚬ") ;; adapted from rfc1345.mim   ("&a;" ?\ą)
+      ("o" "ᚬ") ;;  later vowel (Unicode)
+      ("r" "ᚱ")
+      ("k" "ᚴ")
+  
+      ("h" "ᚼ")
+      ("n" "ᚾ")
+      ("i" "ᛁ")
+      ("a" "ᛅ")
+      ("s" "ᛋ")
+  
+      ("t" "ᛏ")
+      ("b" "ᛒ")
+      ("m" "ᛘ")
+      ("l" "ᛚ")
+      ("y" "ᛦ") ;; ("R" "ᛦ") ;;  Later transcribed as "y" 
+    ;; </transliteration>
+
+    ;; <transliteration id="younger-futhark-short-twig-unicode"
+    ;;                 parent="younger-futhark-unicode">
+      ;;("ą" "ᚭ") ;;  earlier vowel 
+      ("&A;" "ᚭ") ;;  earlier vowel 
+      ("O" "ᚭ") ;;  later vowel (Unicode)
+  
+      ("H" "ᚽ")
+      ("N" "ᚿ")
+      ("A" "ᛆ")
+      ("S" "ᛌ")
+  
+      ("T" "ᛐ")
+      ("B" "ᛓ")
+      ("M" "ᛙ")
+      ("Y" "ᛧ") ;; ("R" "ᛧ") ;;  Should this always be "y"? 
+    ;; </transliteration>
+
+;;  Special keys: þ ð ï ŋ ȝ œ æ ø ą 
+;; adapted from rfc1345.mim   ("&th" ?\þ)
+;; adapted from rfc1345.mim   ("&d-" ?\ð)
+;; adapted from rfc1345.mim   ("&i:" ?\ï)
+;; adapted from rfc1345.mim   ("&ng" ?\ŋ)
+;; ("g" "ȝ") 
+;; adapted from rfc1345.mim   ("&oe" ?\œ)
+;; adapted from rfc1345.mim   ("&ae" ?\æ)
+;; adapted from rfc1345.mim   ("&o/" ?\ø)
+;; adapted from rfc1345.mim   ("&a;" ?\ą)
+  )
+)
+
+(state
+  (init
+    (trans)))
+
+
