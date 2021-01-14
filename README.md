@@ -52,6 +52,17 @@ transliteration characters and everything should show up as Egyptian.  For
 the egyptian-hieroglyphs input method, type a transliteration character,
 phonetic equivalent or Gardiner code, and hit space to commit.
 
+#### Arch Linux
+
+A package for this project exists in the
+[AUR](https://aur.archlinux.org/packages/ibus-ancient-git).
+
+To install it using `yay` run:
+
+```
+yay -S ibus-ancient-git
+```
+
 ### Changing the mappings
 
 If you'd prefer a slightly different mapping, I'd love to hear about it.
